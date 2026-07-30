@@ -1,0 +1,38 @@
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editoren
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Build-Output
+dist/
+
+# Lokale Konfiguration & Debug-Dateien
+config.json
+debug_*.json
+
+# Logs & Temporäres
+*.log
+*.tmp
+
+# ── Laufzeit-Dateien: legt die App selbst neben sich an ──
+einstellungen.json
+.ticker.lock
+build-protokoll.txt
+
+# ── PyInstaller ──
+build/
+dist/
+*.spec
+
+# ── Sicherheitsnetz: keine Binaerdateien ins Repo (Releases statt Repo) ──
+*.exe
+*.zip
