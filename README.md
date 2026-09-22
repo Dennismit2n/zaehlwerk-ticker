@@ -6,6 +6,8 @@
 
 **Full analysis in the browser: [Zählwerk](https://dennismit2n.github.io/zaehlwerk/)** · [Deutsche Fassung](README.de.md)
 
+<img src="assets/screenshot-de.webp" alt="Zählwerk Ticker, the floating readout for Windows: the current five-hour block with the time until it ends, today’s total with the number of replies, and usage per model." width="340">
+
 ---
 
 ## What it is for
