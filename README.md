@@ -57,7 +57,7 @@ Lost it? **Bring overlay to centre** in the menu. This happens when a second mon
 
 ## Privacy
 
-**There is no network access.** Not "we don't send anything", but: the capability is not built in at all. Verifiable from the program's import list — `requests`, `urllib`, `socket`, `http` and `webbrowser` do not appear in it. No update check, no telemetry, no identifier.
+**There is no network access.** Not "we don’t send anything", but: the capability is not built in at all. Verifiable from the program’s import list — `requests`, `urllib`, `socket`, `http` and `webbrowser` do not appear in it. No update check, no telemetry, no identifier.
 
 The only files read are the `.jsonl` logs under `%USERPROFILE%\.claude\projects`, and from those only the accounting lines: timestamp, model name and the four token figures. Conversation content is neither analysed nor displayed.
 
