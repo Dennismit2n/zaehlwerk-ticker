@@ -6,6 +6,8 @@
 
 **Ausführliche Auswertung im Browser: [Zählwerk](https://dennismit2n.github.io/zaehlwerk/)** · [English version](README.md)
 
+<img src="assets/screenshot-de.webp" alt="Der Zählwerk Ticker, die schwebende Anzeige für Windows: der laufende Fünf-Stunden-Block mit der Zeit bis zu seinem Ende, die Tagessumme mit der Zahl der Antworten und der Verbrauch je Modell." width="340">
+
 ---
 
 ## Wofür
