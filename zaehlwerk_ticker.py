@@ -696,6 +696,8 @@ class TickerApp:
             pystray.MenuItem(self.t("mSprache"), sprachen),
             pystray.MenuItem(self.t("mBeenden"),
                              lambda *_: self.ui_queue.put(("ende", None))),
+            pystray.Menu.SEPARATOR,
+            pystray.MenuItem("© 2026 Dennis_mit_2n", None, enabled=False),
         )
         if self.icon:
             try:
