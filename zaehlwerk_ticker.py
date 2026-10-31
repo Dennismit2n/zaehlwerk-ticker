@@ -98,8 +98,8 @@ FARBEN = {
 }
 
 # ------------------------------ Sprachen ------------------------------------
-# Zwei Sprachen, von Hand geschrieben. Die Browser-Fassung führt zwölf;
-# für ein Tray-Menü mit einer Handvoll Zeilen wäre das unnötiger Ballast.
+# 14 Sprachen wie die Browser-Fassung und die Startseite, von Hand geschrieben.
+# Mengen stehen als Mehrzahlformen (one/few/many/other) mit Platzhalter {n}.
 
 TEXTE = {
     "de": {
@@ -110,23 +110,19 @@ TEXTE = {
         "heute": "Heute",
         "endetIn": "endet in",
         "abgelaufen": "abgelaufen",
-        "antworten_1": "Antwort",
-        "antworten_n": "Antworten",
+        "antworten": {"one": "{n} Antwort", "other": "{n} Antworten"},
         "lade": "lese Protokolle …",
         "keineDaten": "Noch keine Nutzung heute",
         "keinOrdner": "Ordner nicht gefunden",
-        "keinOrdnerLang": ("Der Ordner mit den Protokollen wurde nicht gefunden:\n\n{pfad}\n\n"
-                           "Er entsteht, sobald Claude Code das erste Mal gelaufen ist."),
-        "aktualisiert": "aktualisiert %H:%M:%S",
+        "keinOrdnerLang": "Der Ordner mit den Protokollen wurde nicht gefunden:\n\n{pfad}\n\nEr entsteht, sobald Claude Code das erste Mal gelaufen ist.",
+        "aktualisiert": "aktualisiert {zeit}",
         "mOverlay": "Overlay an/aus",
         "mMitte": "Overlay zur Mitte holen",
         "mJetzt": "Jetzt aktualisieren",
         "mSprache": "Sprache",
         "mBrowser": "Ausführliche Auswertung im Browser",
         "mBeenden": "Beenden",
-        "laeuftBereits": ("Der Zählwerk Ticker läuft bereits.\n\n"
-                          "Das Symbol steckt im Infobereich der Taskleiste — "
-                          "Rechtsklick darauf."),
+        "laeuftBereits": "Der Zählwerk Ticker läuft bereits.\n\nDas Symbol steckt im Infobereich der Taskleiste, Rechtsklick darauf.",
     },
     "en": {
         "_name": "English",
@@ -136,36 +132,317 @@ TEXTE = {
         "heute": "Today",
         "endetIn": "ends in",
         "abgelaufen": "expired",
-        "antworten_1": "reply",
-        "antworten_n": "replies",
+        "antworten": {"one": "{n} reply", "other": "{n} replies"},
         "lade": "reading logs …",
         "keineDaten": "No usage today yet",
         "keinOrdner": "Folder not found",
-        "keinOrdnerLang": ("The folder holding the logs was not found:\n\n{pfad}\n\n"
-                           "It appears once Claude Code has run for the first time."),
-        "aktualisiert": "updated %H:%M:%S",
+        "keinOrdnerLang": "The folder holding the logs was not found:\n\n{pfad}\n\nIt appears once Claude Code has run for the first time.",
+        "aktualisiert": "updated {zeit}",
         "mOverlay": "Show/hide overlay",
         "mMitte": "Bring overlay to centre",
         "mJetzt": "Refresh now",
         "mSprache": "Language",
         "mBrowser": "Full analysis in the browser",
         "mBeenden": "Quit",
-        "laeuftBereits": ("Zählwerk Ticker is already running.\n\n"
-                          "Its icon sits in the notification area — right-click it."),
+        "laeuftBereits": "Zählwerk Ticker is already running.\n\nIts icon sits in the notification area, right-click it.",
+    },
+    "es": {
+        "_name": "Español",
+        "titel": "Zählwerk",
+        "block": "Bloque",
+        "blockGeschaetzt": "estimado",
+        "heute": "Hoy",
+        "endetIn": "termina en",
+        "abgelaufen": "terminado",
+        "antworten": {"one": "{n} respuesta", "other": "{n} respuestas"},
+        "lade": "leyendo registros …",
+        "keineDaten": "Todavía no hay uso hoy",
+        "keinOrdner": "Carpeta no encontrada",
+        "keinOrdnerLang": "No se encontró la carpeta con los registros:\n\n{pfad}\n\nAparece en cuanto Claude Code se ejecuta por primera vez.",
+        "aktualisiert": "actualizado {zeit}",
+        "mOverlay": "Mostrar/ocultar overlay",
+        "mMitte": "Traer el overlay al centro",
+        "mJetzt": "Actualizar ahora",
+        "mSprache": "Idioma",
+        "mBrowser": "Análisis completo en el navegador",
+        "mBeenden": "Salir",
+        "laeuftBereits": "Zählwerk Ticker ya está en marcha.\n\nSu icono está en el área de notificación: haz clic derecho en él.",
+    },
+    "fr": {
+        "_name": "Français",
+        "titel": "Zählwerk",
+        "block": "Bloc",
+        "blockGeschaetzt": "estimé",
+        "heute": "Aujourd’hui",
+        "endetIn": "se termine dans",
+        "abgelaufen": "terminé",
+        "antworten": {"one": "{n} réponse", "other": "{n} réponses"},
+        "lade": "lecture des journaux …",
+        "keineDaten": "Pas encore d’utilisation aujourd’hui",
+        "keinOrdner": "Dossier introuvable",
+        "keinOrdnerLang": "Le dossier des journaux est introuvable :\n\n{pfad}\n\nIl apparaît dès que Claude Code a été lancé une première fois.",
+        "aktualisiert": "mis à jour {zeit}",
+        "mOverlay": "Afficher/masquer l’overlay",
+        "mMitte": "Ramener l’overlay au centre",
+        "mJetzt": "Actualiser maintenant",
+        "mSprache": "Langue",
+        "mBrowser": "Analyse complète dans le navigateur",
+        "mBeenden": "Quitter",
+        "laeuftBereits": "Zählwerk Ticker est déjà lancé.\n\nSon icône se trouve dans la zone de notification : faites un clic droit dessus.",
+    },
+    "it": {
+        "_name": "Italiano",
+        "titel": "Zählwerk",
+        "block": "Blocco",
+        "blockGeschaetzt": "stimato",
+        "heute": "Oggi",
+        "endetIn": "termina tra",
+        "abgelaufen": "scaduto",
+        "antworten": {"one": "{n} risposta", "other": "{n} risposte"},
+        "lade": "lettura dei registri …",
+        "keineDaten": "Ancora nessun utilizzo oggi",
+        "keinOrdner": "Cartella non trovata",
+        "keinOrdnerLang": "Non ho trovato la cartella con i registri:\n\n{pfad}\n\nCompare appena Claude Code viene avviato la prima volta.",
+        "aktualisiert": "aggiornato {zeit}",
+        "mOverlay": "Mostra/nascondi overlay",
+        "mMitte": "Riporta l’overlay al centro",
+        "mJetzt": "Aggiorna ora",
+        "mSprache": "Lingua",
+        "mBrowser": "Analisi completa nel browser",
+        "mBeenden": "Esci",
+        "laeuftBereits": "Zählwerk Ticker è già in esecuzione.\n\nLa sua icona è nell’area di notifica: fai clic destro su di essa.",
+    },
+    "nl": {
+        "_name": "Nederlands",
+        "titel": "Zählwerk",
+        "block": "Blok",
+        "blockGeschaetzt": "geschat",
+        "heute": "Vandaag",
+        "endetIn": "eindigt over",
+        "abgelaufen": "verlopen",
+        "antworten": {"one": "{n} antwoord", "other": "{n} antwoorden"},
+        "lade": "logboeken lezen …",
+        "keineDaten": "Vandaag nog geen gebruik",
+        "keinOrdner": "Map niet gevonden",
+        "keinOrdnerLang": "De map met de logboeken is niet gevonden:\n\n{pfad}\n\nDie ontstaat zodra Claude Code voor het eerst heeft gedraaid.",
+        "aktualisiert": "bijgewerkt {zeit}",
+        "mOverlay": "Overlay tonen/verbergen",
+        "mMitte": "Overlay naar het midden halen",
+        "mJetzt": "Nu bijwerken",
+        "mSprache": "Taal",
+        "mBrowser": "Uitgebreide analyse in de browser",
+        "mBeenden": "Afsluiten",
+        "laeuftBereits": "Zählwerk Ticker draait al.\n\nHet pictogram staat in het systeemvak: klik er met rechts op.",
+    },
+    "pl": {
+        "_name": "Polski",
+        "titel": "Zählwerk",
+        "block": "Blok",
+        "blockGeschaetzt": "szacunkowo",
+        "heute": "Dziś",
+        "endetIn": "kończy się za",
+        "abgelaufen": "minął",
+        "antworten": {"one": "{n} odpowiedź", "few": "{n} odpowiedzi", "many": "{n} odpowiedzi", "other": "{n} odpowiedzi"},
+        "lade": "czytam dzienniki …",
+        "keineDaten": "Dziś jeszcze bez użycia",
+        "keinOrdner": "Nie znaleziono folderu",
+        "keinOrdnerLang": "Nie znaleziono folderu z dziennikami:\n\n{pfad}\n\nPowstaje, gdy Claude Code uruchomi się pierwszy raz.",
+        "aktualisiert": "aktualizacja {zeit}",
+        "mOverlay": "Pokaż/ukryj nakładkę",
+        "mMitte": "Przenieś nakładkę na środek",
+        "mJetzt": "Odśwież teraz",
+        "mSprache": "Język",
+        "mBrowser": "Pełna analiza w przeglądarce",
+        "mBeenden": "Zakończ",
+        "laeuftBereits": "Zählwerk Ticker już działa.\n\nIkona jest w obszarze powiadomień: kliknij ją prawym przyciskiem.",
+    },
+    "pt": {
+        "_name": "Português",
+        "titel": "Zählwerk",
+        "block": "Bloco",
+        "blockGeschaetzt": "estimado",
+        "heute": "Hoje",
+        "endetIn": "termina em",
+        "abgelaufen": "expirado",
+        "antworten": {"one": "{n} resposta", "other": "{n} respostas"},
+        "lade": "lendo registros …",
+        "keineDaten": "Ainda sem uso hoje",
+        "keinOrdner": "Pasta não encontrada",
+        "keinOrdnerLang": "A pasta com os registros não foi encontrada:\n\n{pfad}\n\nEla aparece assim que o Claude Code roda pela primeira vez.",
+        "aktualisiert": "atualizado {zeit}",
+        "mOverlay": "Mostrar/ocultar overlay",
+        "mMitte": "Trazer o overlay para o centro",
+        "mJetzt": "Atualizar agora",
+        "mSprache": "Idioma",
+        "mBrowser": "Análise completa no navegador",
+        "mBeenden": "Sair",
+        "laeuftBereits": "O Zählwerk Ticker já está em execução.\n\nO ícone fica na área de notificação: clique nele com o botão direito.",
+    },
+    "tr": {
+        "_name": "Türkçe",
+        "titel": "Zählwerk",
+        "block": "Blok",
+        "blockGeschaetzt": "tahmini",
+        "heute": "Bugün",
+        "endetIn": "kalan",
+        "abgelaufen": "süresi doldu",
+        "antworten": {"one": "{n} yanıt", "other": "{n} yanıt"},
+        "lade": "günlükler okunuyor …",
+        "keineDaten": "Bugün henüz kullanım yok",
+        "keinOrdner": "Klasör bulunamadı",
+        "keinOrdnerLang": "Günlüklerin bulunduğu klasör bulunamadı:\n\n{pfad}\n\nClaude Code ilk kez çalıştığında oluşur.",
+        "aktualisiert": "güncellendi {zeit}",
+        "mOverlay": "Katmanı göster/gizle",
+        "mMitte": "Katmanı ortaya getir",
+        "mJetzt": "Şimdi güncelle",
+        "mSprache": "Dil",
+        "mBrowser": "Tarayıcıda ayrıntılı analiz",
+        "mBeenden": "Çık",
+        "laeuftBereits": "Zählwerk Ticker zaten çalışıyor.\n\nSimgesi bildirim alanında: üzerine sağ tıklayın.",
+    },
+    "ru": {
+        "_name": "Русский",
+        "titel": "Zählwerk",
+        "block": "Блок",
+        "blockGeschaetzt": "оценка",
+        "heute": "Сегодня",
+        "endetIn": "закончится через",
+        "abgelaufen": "истёк",
+        "antworten": {"one": "{n} ответ", "few": "{n} ответа", "many": "{n} ответов", "other": "{n} ответа"},
+        "lade": "читаю журналы …",
+        "keineDaten": "Сегодня ещё нет использования",
+        "keinOrdner": "Папка не найдена",
+        "keinOrdnerLang": "Папка с журналами не найдена:\n\n{pfad}\n\nОна появится после первого запуска Claude Code.",
+        "aktualisiert": "обновлено {zeit}",
+        "mOverlay": "Показать/скрыть оверлей",
+        "mMitte": "Вернуть оверлей в центр",
+        "mJetzt": "Обновить сейчас",
+        "mSprache": "Язык",
+        "mBrowser": "Подробный анализ в браузере",
+        "mBeenden": "Выход",
+        "laeuftBereits": "Zählwerk Ticker уже запущен.\n\nЗначок находится в области уведомлений: щёлкните по нему правой кнопкой.",
+    },
+    "hi": {
+        "_name": "हिन्दी",
+        "titel": "Zählwerk",
+        "block": "ब्लॉक",
+        "blockGeschaetzt": "अनुमानित",
+        "heute": "आज",
+        "endetIn": "शेष",
+        "abgelaufen": "समाप्त",
+        "antworten": {"one": "{n} उत्तर", "other": "{n} उत्तर"},
+        "lade": "लॉग पढ़ रहे हैं …",
+        "keineDaten": "आज अभी कोई उपयोग नहीं",
+        "keinOrdner": "फ़ोल्डर नहीं मिला",
+        "keinOrdnerLang": "लॉग वाला फ़ोल्डर नहीं मिला:\n\n{pfad}\n\nयह Claude Code के पहली बार चलने पर बनता है।",
+        "aktualisiert": "अपडेट {zeit}",
+        "mOverlay": "ओवरले दिखाएँ/छिपाएँ",
+        "mMitte": "ओवरले को बीच में लाएँ",
+        "mJetzt": "अभी अपडेट करें",
+        "mSprache": "भाषा",
+        "mBrowser": "ब्राउज़र में पूरा विश्लेषण",
+        "mBeenden": "बंद करें",
+        "laeuftBereits": "Zählwerk Ticker पहले से चल रहा है।\n\nइसका आइकन सूचना क्षेत्र में है: उस पर राइट-क्लिक करें।",
+    },
+    "zh": {
+        "_name": "中文",
+        "titel": "Zählwerk",
+        "block": "区块",
+        "blockGeschaetzt": "估算",
+        "heute": "今天",
+        "endetIn": "剩余",
+        "abgelaufen": "已过期",
+        "antworten": {"other": "{n} 条回复"},
+        "lade": "正在读取日志 …",
+        "keineDaten": "今天还没有使用",
+        "keinOrdner": "找不到文件夹",
+        "keinOrdnerLang": "找不到日志所在的文件夹：\n\n{pfad}\n\nClaude Code 第一次运行后它就会出现。",
+        "aktualisiert": "更新于 {zeit}",
+        "mOverlay": "显示/隐藏悬浮窗",
+        "mMitte": "把悬浮窗移到屏幕中央",
+        "mJetzt": "立即更新",
+        "mSprache": "语言",
+        "mBrowser": "在浏览器中查看完整分析",
+        "mBeenden": "退出",
+        "laeuftBereits": "Zählwerk Ticker 已在运行。\n\n它的图标在通知区域：右键单击它。",
+    },
+    "ja": {
+        "_name": "日本語",
+        "titel": "Zählwerk",
+        "block": "ブロック",
+        "blockGeschaetzt": "推定",
+        "heute": "今日",
+        "endetIn": "残り",
+        "abgelaufen": "終了",
+        "antworten": {"other": "{n} 件の応答"},
+        "lade": "ログを読み込み中 …",
+        "keineDaten": "今日はまだ使用していません",
+        "keinOrdner": "フォルダーが見つかりません",
+        "keinOrdnerLang": "ログのフォルダーが見つかりません：\n\n{pfad}\n\nClaude Code を初めて実行すると作成されます。",
+        "aktualisiert": "更新 {zeit}",
+        "mOverlay": "オーバーレイの表示/非表示",
+        "mMitte": "オーバーレイを中央に戻す",
+        "mJetzt": "今すぐ更新",
+        "mSprache": "言語",
+        "mBrowser": "ブラウザーで詳しい分析",
+        "mBeenden": "終了",
+        "laeuftBereits": "Zählwerk Ticker はすでに起動しています。\n\nアイコンは通知領域にあります。右クリックしてください。",
+    },
+    "ko": {
+        "_name": "한국어",
+        "titel": "Zählwerk",
+        "block": "블록",
+        "blockGeschaetzt": "추정",
+        "heute": "오늘",
+        "endetIn": "남은 시간",
+        "abgelaufen": "만료됨",
+        "antworten": {"other": "{n}개 응답"},
+        "lade": "로그 읽는 중 …",
+        "keineDaten": "오늘은 아직 사용 기록이 없습니다",
+        "keinOrdner": "폴더를 찾을 수 없음",
+        "keinOrdnerLang": "로그 폴더를 찾을 수 없습니다:\n\n{pfad}\n\nClaude Code를 처음 실행하면 생깁니다.",
+        "aktualisiert": "업데이트 {zeit}",
+        "mOverlay": "오버레이 표시/숨기기",
+        "mMitte": "오버레이를 가운데로",
+        "mJetzt": "지금 업데이트",
+        "mSprache": "언어",
+        "mBrowser": "브라우저에서 자세한 분석",
+        "mBeenden": "종료",
+        "laeuftBereits": "Zählwerk Ticker가 이미 실행 중입니다.\n\n아이콘은 알림 영역에 있습니다. 마우스 오른쪽 버튼으로 클릭하세요.",
     },
 }
 
 
+# Windows-Anzeigesprache (primäre LANGID) → Sprachcode
+_LANGID = {0x07: "de", 0x09: "en", 0x0A: "es", 0x0C: "fr", 0x10: "it", 0x13: "nl", 0x15: "pl",
+           0x16: "pt", 0x1F: "tr", 0x19: "ru", 0x39: "hi", 0x04: "zh", 0x11: "ja", 0x12: "ko"}
+
+
 def systemsprache() -> str:
-    """Windows-Anzeigesprache; alles außer Deutsch bekommt Englisch."""
+    """Windows-Anzeigesprache, wenn der Ticker sie spricht, sonst Englisch."""
     try:
         if ctypes is not None:
             lcid = ctypes.windll.kernel32.GetUserDefaultUILanguage()
-            if (lcid & 0x3FF) == 0x07:          # LANG_GERMAN
-                return "de"
+            return _LANGID.get(lcid & 0x3FF, "en")
     except (AttributeError, OSError):
         pass
     return "en"
+
+
+def mehrzahl(n: int, sprache: str) -> str:
+    """Mehrzahlform wie Intl.PluralRules im Browser: Polnisch und Russisch kennen one/few/many."""
+    if sprache in ("zh", "ja", "ko"):
+        return "other"
+    if sprache in ("pl", "ru"):
+        e, z = n % 10, n % 100
+        if (n == 1) if sprache == "pl" else (e == 1 and z != 11):
+            return "one"
+        if 2 <= e <= 4 and not 12 <= z <= 14:
+            return "few"
+        return "many"
+    if sprache in ("fr", "hi", "pt"):               # 0 und 1 sind dort Einzahl
+        return "one" if n in (0, 1) else "other"
+    return "one" if n == 1 else "other"
 
 
 # ------------------------------ Einstellungen -------------------------------
@@ -469,9 +746,13 @@ def kurz_modell(name: str) -> str:
     return f"{familie} {version}"
 
 
-def zahl(n: int) -> str:
-    """Tausendertrennung ohne locale-Abhängigkeit."""
-    return f"{int(n):,}".replace(",", ".")
+# Tausendertrenner je Sprache (ohne locale-Abhängigkeit)
+_TRENNER = {"en": ",", "hi": ",", "zh": ",", "ja": ",", "ko": ",", "fr": "\u202f", "ru": "\u00a0", "pl": "\u00a0"}
+
+
+def zahl(n: int, sprache: str = "de") -> str:
+    """Tausendertrennung in der Schreibweise der Sprache: 1.234.567, 1,234,567, 1 234 567."""
+    return f"{int(n):,}".replace(",", _TRENNER.get(sprache, "."))
 
 
 def dauer_kurz(sekunden: float, sprache: str) -> str:
@@ -514,6 +795,11 @@ class TickerApp:
 
     def t(self, schluessel: str) -> str:
         return TEXTE[self.sprache].get(schluessel, schluessel)
+
+    def tn(self, schluessel: str, n: int) -> str:
+        """Text mit Menge in der passenden Mehrzahlform"""
+        formen = TEXTE[self.sprache][schluessel]
+        return (formen.get(mehrzahl(n, self.sprache)) or formen["other"]).replace("{n}", str(n))
 
     # ---------------------------------------------------------------- Fenster
 
@@ -622,7 +908,7 @@ class TickerApp:
 
         if self.kompakt:
             tk.Label(self.koerper,
-                     text=self.t("heute") + ": " + zahl(r["heute"]["echt"]),
+                     text=self.t("heute") + ": " + zahl(r["heute"]["echt"], self.sprache),
                      fg=FARBEN["titel"], bg=FARBEN["bg"],
                      font=("Segoe UI", 11, "bold")).pack(anchor="w", pady=(2, 0))
             self._binde(self.root)
@@ -642,23 +928,22 @@ class TickerApp:
             von = datetime.fromtimestamp(r["block_von"]).strftime("%H:%M")
             self._zeile(self.koerper,
                         self.t("block") + " " + von + " (" + self.t("blockGeschaetzt") + ")",
-                        zahl(r["block"]["echt"]), anteil, fett=True, farbe=farbe)
+                        zahl(r["block"]["echt"], self.sprache), anteil, fett=True, farbe=farbe)
             tk.Label(self.koerper, text=zusatz, fg=FARBEN["leise"], bg=FARBEN["bg"],
                      font=("Segoe UI", 8)).pack(anchor="e")
 
         # --- heute ---
         n = r["heute"]["anzahl"]
-        wort = self.t("antworten_1") if n == 1 else self.t("antworten_n")
-        self._zeile(self.koerper, self.t("heute"), zahl(r["heute"]["echt"]),
+        self._zeile(self.koerper, self.t("heute"), zahl(r["heute"]["echt"], self.sprache),
                     None, fett=True)
-        tk.Label(self.koerper, text=str(n) + " " + wort, fg=FARBEN["leise"],
+        tk.Label(self.koerper, text=self.tn("antworten", n), fg=FARBEN["leise"],
                  bg=FARBEN["bg"], font=("Segoe UI", 8)).pack(anchor="e")
 
         # --- Modelle im laufenden Block ---
         if r["modelle"]:
             groesstes = r["modelle"][0][1] or 1
             for name, wert in r["modelle"][:3]:
-                self._zeile(self.koerper, kurz_modell(name), zahl(wert),
+                self._zeile(self.koerper, kurz_modell(name), zahl(wert, self.sprache),
                             wert / groesstes)
 
         self._binde(self.root)
@@ -743,7 +1028,7 @@ class TickerApp:
                 if art == "daten":
                     self.ergebnis = last
                     self.status_lbl.config(
-                        text=datetime.now().strftime(self.t("aktualisiert")),
+                        text=self.t("aktualisiert").replace("{zeit}", datetime.now().strftime("%H:%M:%S")),
                         fg=FARBEN["leise"])
                     self._zeichnen()
                 elif art == "kein_ordner":
