@@ -2,7 +2,7 @@
 
 **Keep an eye on usage while you work.** A small floating readout for Windows: current five-hour block, daily total, breakdown by model. Reads nothing but the log files Claude Code writes onto your own disk.
 
-![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-a3e635) ![No network](https://img.shields.io/badge/Network%20access-none-4d7c0f) ![Languages](https://img.shields.io/badge/Languages-DE%20%7C%20EN-65a30d) ![Licence](https://img.shields.io/badge/Licence-MIT-6ee7b7)
+![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-a3e635) ![No network](https://img.shields.io/badge/Network%20access-none-4d7c0f) ![Languages](https://img.shields.io/badge/Languages-14-65a30d) ![Licence](https://img.shields.io/badge/Licence-MIT-6ee7b7)
 
 **Full analysis in the browser: [Zählwerk](https://dennismit2n.github.io/zaehlwerk/)** · [Deutsche Fassung](README.de.md)
 

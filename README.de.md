@@ -2,7 +2,7 @@
 
 **Der Verbrauch im Blick, während du arbeitest.** Eine kleine schwebende Anzeige für Windows: laufender Fünf-Stunden-Block, Tagessumme, Aufteilung nach Modell. Liest ausschließlich die Protokolldateien, die Claude Code auf deiner eigenen Festplatte anlegt.
 
-![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-a3e635) ![Kein Netz](https://img.shields.io/badge/Netzzugriff-keiner-4d7c0f) ![Sprachen](https://img.shields.io/badge/Sprachen-DE%20%7C%20EN-65a30d) ![Lizenz](https://img.shields.io/badge/Lizenz-MIT-6ee7b7)
+![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-a3e635) ![Kein Netz](https://img.shields.io/badge/Netzzugriff-keiner-4d7c0f) ![Sprachen](https://img.shields.io/badge/Sprachen-14-65a30d) ![Lizenz](https://img.shields.io/badge/Lizenz-MIT-6ee7b7)
 
 **Ausführliche Auswertung im Browser: [Zählwerk](https://dennismit2n.github.io/zaehlwerk/)** · [English version](README.md)
 
