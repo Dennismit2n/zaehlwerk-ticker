@@ -36,3 +36,7 @@ dist/
 # ── Sicherheitsnetz: keine Binaerdateien ins Repo (Releases statt Repo) ──
 *.exe
 *.zip
+
+# Python
+__pycache__/
+*.pyc
