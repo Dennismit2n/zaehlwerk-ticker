@@ -6,7 +6,7 @@
 
 **Full analysis in the browser: [Zählwerk](https://dennismit2n.github.io/zaehlwerk/)** · [Deutsche Fassung](README.de.md)
 
-<img src="assets/screenshot-de.webp" alt="Zählwerk Ticker, the floating readout for Windows: the current five-hour block with the time until it ends, today’s total with the number of replies, and usage per model." width="340">
+<img src="assets/screenshot-de.webp" alt="Zählwerk Ticker, the floating readout for Windows: the current five-hour block with the time until it ends, today’s total with the number of replies, and usage per model, on a plate with a square frame and four small screws." width="340">
 
 ---
 
@@ -65,7 +65,7 @@ Exactly one file is written: `einstellungen.json` next to the program, holding p
 
 ## Under the hood
 
-One file, roughly 1,100 lines, two third-party packages (`pystray`, `pillow`), everything else is the Python standard library.
+One file, roughly 1,400 lines, two third-party packages (`pystray`, `pillow`), everything else is the Python standard library.
 
 **Two things decide whether the numbers are right:**
 

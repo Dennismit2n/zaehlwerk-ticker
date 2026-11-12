@@ -6,7 +6,7 @@
 
 **Ausführliche Auswertung im Browser: [Zählwerk](https://dennismit2n.github.io/zaehlwerk/)** · [English version](README.md)
 
-<img src="assets/screenshot-de.webp" alt="Der Zählwerk Ticker, die schwebende Anzeige für Windows: der laufende Fünf-Stunden-Block mit der Zeit bis zu seinem Ende, die Tagessumme mit der Zahl der Antworten und der Verbrauch je Modell." width="340">
+<img src="assets/screenshot-de.webp" alt="Der Zählwerk Ticker, die schwebende Anzeige für Windows: der laufende Fünf-Stunden-Block mit der Zeit bis zu seinem Ende, die Tagessumme mit der Zahl der Antworten und der Verbrauch je Modell, auf einer Platte mit eckigem Rahmen und vier kleinen Schrauben." width="340">
 
 ---
 
@@ -65,7 +65,7 @@ Geschrieben wird genau eine Datei: `einstellungen.json` neben dem Programm, mit 
 
 ## Unter der Haube
 
-Eine Datei, rund 1.100 Zeilen, zwei Fremdpakete (`pystray`, `pillow`), alles andere ist Python-Standardbibliothek.
+Eine Datei, rund 1.400 Zeilen, zwei Fremdpakete (`pystray`, `pillow`), alles andere ist Python-Standardbibliothek.
 
 **Zwei Dinge entscheiden über die Richtigkeit der Zahlen:**
 
