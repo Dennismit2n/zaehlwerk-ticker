@@ -2,7 +2,7 @@
 
 **Keep an eye on usage while you work.** A small floating readout for Windows: current five-hour block, daily total, breakdown by model. Reads nothing but the log files Claude Code writes onto your own disk.
 
-![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-a3e635) ![No network](https://img.shields.io/badge/Network%20access-none-4d7c0f) ![Languages](https://img.shields.io/badge/Languages-14-65a30d) ![Licence](https://img.shields.io/badge/Licence-MIT-6ee7b7)
+![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-a3e635) ![No network](https://img.shields.io/badge/Network%20access-none-4d7c0f) ![Languages](https://img.shields.io/badge/Languages-14-65a30d) ![License](https://img.shields.io/badge/License-MIT-6ee7b7)
 
 **Full analysis in the browser: [Zählwerk](https://dennismit2n.github.io/zaehlwerk/)** · [Deutsche Fassung](README.de.md)
 
@@ -51,15 +51,15 @@ pythonw zaehlwerk_ticker.py
 |---|---|
 | Drag | move the overlay, the position is remembered when you let go |
 | Double-click | switch between small and large |
-| Right-click the tray icon | show/hide, bring to centre, refresh now, language, quit |
+| Right-click the tray icon | show/hide, bring to center, refresh now, language, quit |
 
-Lost it? **Bring overlay to centre** in the menu. This happens when a second monitor is unplugged: the overlay is frameless and has no title bar to grab.
+Lost it? **Bring overlay to center** in the menu. This happens when a second monitor is unplugged: the overlay is frameless and has no title bar to grab.
 
 ## Privacy
 
 **There is no network access.** Not "I don’t send anything", but: the capability is not built in at all. Verifiable from the program’s import list: `requests`, `urllib`, `socket`, `http` and `webbrowser` do not appear in it. No update check, no telemetry, no identifier.
 
-The only files read are the `.jsonl` logs under `%USERPROFILE%\.claude\projects`, and from those only the accounting lines: timestamp, model name and the four token figures. Conversation content is neither analysed nor displayed.
+The only files read are the `.jsonl` logs under `%USERPROFILE%\.claude\projects`, and from those only the accounting lines: timestamp, model name and the four token figures. Conversation content is neither analyzed nor displayed.
 
 Exactly one file is written: `einstellungen.json` next to the program, holding position, opacity, language and the small/large state. No log, no cache.
 
@@ -74,7 +74,7 @@ One file, roughly 1,400 lines, two third-party packages (`pystray`, `pillow`), e
 
 **The log format is not documented.** If Anthropic changes it, the ticker will show too little or nothing at all.
 
-## Licence
+## License
 
 MIT, see [LICENSE](LICENSE).
 

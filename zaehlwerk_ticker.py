@@ -140,7 +140,7 @@ TEXTE = {
         "keinOrdnerLang": "The folder holding the logs was not found:\n\n{pfad}\n\nIt appears once Claude Code has run for the first time.",
         "aktualisiert": "updated {zeit}",
         "mOverlay": "Show/hide overlay",
-        "mMitte": "Bring overlay to centre",
+        "mMitte": "Bring overlay to center",
         "mJetzt": "Refresh now",
         "mSprache": "Language",
         "mBrowser": "Full analysis in the browser",
